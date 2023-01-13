@@ -24,7 +24,7 @@ Dane  innych użytkowników są pozyskiwane przez scalanie danych z plików .csv
 Oceny obliczane na podsatawie wag są przyrównywane do macierzy item-item.
 Macierz ta jest obliczana na postawie podobieństwa cosinusowego (ang. cosine similarity) 
 
-$$\frac{\sum_{i=1}^{n}A_iB_i}{\sqrt{\sum_{i=1}^{n}A^2_i}\sqrt{\sum_{i=1}^{n}B^2_i}}$$
+$$\frac{\sum_{i=1}^{n} A_iB_i}{\sqrt{\sum_{i=1}^{n} A^2_i}\sqrt{\sum_{i=1}^{n} B^2_i}}$$
 
 Rekomendacja polega na wybraniu odpowiednich produktów które są zapisane jako prawdopodobieństwo w wierszszu macierzy podobieństw.
 
