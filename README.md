@@ -34,8 +34,9 @@ Do testowania tego modelu można wykorzystać wiedzę o podobnych tytułach jaki
 Model rekomenduje również na pierwszej pozycji tę samą pozycję co wybrał użytkownik - nie jest to błąd, bo pokazuje że to anime jest najbardziej odpowiednie do użytkownika. 
 
 <h2>Proof of concept</h2>
-**Uwagi do projektu:**
+**Uwagi do projektu**
 <ol>
+<li> Do rekomendacji anime potrzebny jest plik anime.csv oraz macierz item-item w formacie .pickle. Do pobrania są z dysku Google: https://drive.google.com/drive/folders/1Jp9tDUmJmDT9_qDLc8Qkiq-s67GRY0v7?usp=sharing Można również przetestować system rekomendacji na danych filmach - wtedy system rekomendacji jest tworzony w trakcie działa aplikacji.</li>
 <li> Wybieranie produktów z listy często buguje się: pierwszym wyborem są  rekomendacje do pierwszego alfabetycznie tytułu - błąd tkintera z obsługą tak dużej ilości tekstu w module Listbox. Dlatego przed pierwszym wyszukaniem najlepiej użyć przycisku "Clear preferences"</li>
 <li> Dataset o ocenach anime jest bardzo duży - ok. 100MB dla pliku .csv oraz ok. 200MB dla macierzy item-item która została skompresowana za pomocą modułu pickle. Dlatego obliczanie oraz wczytywanie macierzy nie jest robione bezpośrednio w aplikacji, a w jupiter notebooku new_notebook.ipynb</li>
 </ol>
