@@ -24,7 +24,7 @@ Dane  innych użytkowników są pozyskiwane przez scalanie danych z plików .csv
 Oceny obliczane na podsatawie wag są przyrównywane do macierzy item-item.
 Macierz ta jest obliczana na postawie podobieństwa cosinusowego (ang. cosine similarity) 
 
-$$\frac{\sum_{i=1}^{n}A_iB_i}{\sqrt{\sum_{i=1}^{n}A^2_i}\sqrt{\sum_{i=1}^{n}B^2_i}}$$
+$$\frac{\sum^{n}_{i=1}A_iB_i}{\sqrt{\sum^{n}_{i=1}A^2_i}\sqrt{\sum^{n}_{i=1}B^2_i}}$$
 
 Rekomendacja polega na wybraniu odpowiednich produktów które są zapisane jako prawdopodobieństwo w wierszszu macierzy podobieństw.
 
@@ -34,7 +34,7 @@ Do testowania tego modelu można wykorzystać wiedzę o podobnych tytułach jaki
 Model rekomenduje również na pierwszej pozycji tę samą pozycję co wybrał użytkownik - nie jest to błąd, bo pokazuje że to anime jest najbardziej odpowiednie do użytkownika. 
 
 <h2>Proof of concept</h2>
-**Uwagi do projektu**
+# Uwagi do projektu
 <ol>
 <li> Do rekomendacji anime potrzebny jest plik anime.csv oraz macierz item-item w formacie .pickle. Do pobrania są z dysku Google: https://drive.google.com/drive/folders/1Jp9tDUmJmDT9_qDLc8Qkiq-s67GRY0v7?usp=sharing Można również przetestować system rekomendacji na danych filmach - wtedy system rekomendacji jest tworzony w trakcie działa aplikacji.</li>
 <li> Wybieranie produktów z listy często buguje się: pierwszym wyborem są  rekomendacje do pierwszego alfabetycznie tytułu - błąd tkintera z obsługą tak dużej ilości tekstu w module Listbox. Dlatego przed pierwszym wyszukaniem najlepiej użyć przycisku "Clear preferences"</li>
